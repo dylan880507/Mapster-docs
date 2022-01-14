@@ -2,7 +2,7 @@
 
 ### 双向映射
 
-如果需要 源到目标 和 目标到源 只进行一次配置，那么可以使用 `ToWays` 方法。
+如果需要 源到目标 和 目标到源 只进行一次配置，那么可以使用 `TwoWays` 方法。
 
 下面的配置的表现为：
 
@@ -53,7 +53,7 @@ TypeAdapterConfig<StaffDto, Staff>.NewConfig()
 
 #### 使用双向映射配置实现逆扁平化映射
 
-使用 `Toways` 方法可以实现与 `Unflattening` 方法同样的效果：
+使用 `TwoWays` 方法可以实现与 `Unflattening` 方法同样的效果：
 
 * 源到目标时 `dto.SupervisorName=poco.Supervisor.Name`
 
